@@ -13,7 +13,7 @@
     }
   },
   "schemes": ["http"],
-  "host": "localhost:3000",
+  "host":  "https://youtube-subscriber-pzlw.onrender.com",
   "basePath": "/",
   "paths": {
     "/subscribers": {
