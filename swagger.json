@@ -1,0 +1,94 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a Get Youtube Subscriber demonstrate Swagger Documentation",
+    "version": "1.0.0",
+    "title": "API",
+    "contact": {
+      "email": "abc@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "schemes": ["http"],
+  "host": "localhost:3000",
+  "basePath": "/",
+  "paths": {
+    "/subscribers": {
+      "get": {
+        "summary": "Get all the subscribers",
+        "description": "Get all the subscribers",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "schema": {
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/subscribers/names": {
+      "get": {
+        "summary": "Object with only names and Subscribed Channel",
+        "description": "grt only names and Subscribed Channel",
+        "produces": ["application/json"],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "schema": {
+              "type": "array"
+            }
+          }
+        }
+      }
+    },
+    "/subscribers/{id}": {
+      "get": {
+        "summary": "subscriber with given id(an Object)",
+        "description": "subscriber with given id(an Object)",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Subscribers id that needs to get data",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid status value",
+            "schema": {
+              "type": "array"
+            }
+          }
+        }
+      }
+    }
+  }
+}
